@@ -1,2 +1,2 @@
-# DanceStudio
-test website of DanceStudio
+# dance
+diploma
