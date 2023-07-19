@@ -1,5 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
+
+import { Image, Grid, Spacer } from "@nextui-org/react";
+
+
 const Galery = () => {
     return (
         <div>
@@ -15,12 +19,44 @@ const Galery = () => {
  Чтобы посмотреть видео записи необходимо нажать на фото заставок видео ролика! Он откроется во всплывающем окне. Смотрите видео и приходите к нам на занятия.
 
  
-          <img src="1.jpg" alt="Фотография 1" width="500" height="350"></img>
-          <img src="2.jpg" alt="Фотография 1" width="500" height="350"></img>
-          <img src="3.jpg" alt="Фотография 1" width="500" height="350"></img>
-          <img src="4.jpg" alt="Фотография 1" width="500" height="350"></img>
-          <img src="5.jpg" alt="Фотография 1" width="500" height="350"></img>
-          <img src="6.jpg" alt="Фотография 1" width="500" height="350"></img>
+ <Grid.Container gap={5}>
+      <Grid>
+        <Image
+          src="1.jpg"
+          objectFit="fill"
+          alt="1"
+          width={450}
+          height={300}
+        />
+      </Grid>
+      <Grid>
+        <Image
+          src="2.jpg"
+          objectFit="fill"
+          alt="1"
+          width={450}
+          height={300}
+        />
+      </Grid>
+      <Grid>
+        <Image
+          src="4.jpg"
+          objectFit="fill"
+          alt="1"
+          width={450}
+          height={300}
+        />
+      </Grid>
+      <Grid>
+        <Image
+          src="6.jpg"
+          objectFit="fill"
+          alt="1"
+          width={450}
+          height={300}
+        />
+      </Grid>
+    </Grid.Container>
         </div>
       );
     };

@@ -49,9 +49,9 @@ const Schedule= () => {
   ];
   return (
     <Table
-      aria-label="Example table with dynamic content"
+      aria-label="Time table"
       css={{
-        height: "auto",
+        height: "100%",
         minWidth: "100%",
       }}
     >

@@ -8,9 +8,9 @@ import Footer from '../components/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return <>
-  <Container  sx={{ display: 'flex'}}>
   <Nav />
-  <NextUIProvider>
+  <Container  sx={{ display: 'flex'}}>
+    <NextUIProvider>
     <Box>
        <CssBaseline />
       <Box>
@@ -18,8 +18,8 @@ export default function App({ Component, pageProps }: AppProps) {
       </Box>
     </Box>
       </NextUIProvider>
-  <Footer/>
-    </Container>
 
+    </Container>
+    <Footer/>
   </>;
 }
