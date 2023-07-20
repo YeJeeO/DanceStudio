@@ -20,7 +20,7 @@ export default function ModalDialog() {
 
   return (
     <div>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button  onClick={handleClickOpen}>
       Присоединяйтесь к нам!
       </Button>
       <Dialog open={open} onClose={handleClose}>

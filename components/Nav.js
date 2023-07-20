@@ -13,7 +13,8 @@ export default function Nav() {
     <Box
     css={{
       maxW: "100%",
-      boxSizing: "border-box"
+      boxSizing: "border-box",
+      
     }}
       onClick={preventDefault}
     >
@@ -25,7 +26,7 @@ export default function Nav() {
           bordered
           squared
         /></Navbar.Brand>
-        <Navbar.Content hideIn="xs" variant="highlight-rounded">
+        <Navbar.Content >
         <Link as={NextLink} href='/' >О нас</Link>
         <Link as={NextLink}  href='/second'>Преподаватели</Link>
         <Link as={NextLink}  href='/third'>Мероприятия</Link>
