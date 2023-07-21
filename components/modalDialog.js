@@ -24,7 +24,7 @@ export default function ModalDialog() {
       Присоединяйтесь к нам!
       </Button>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Танцуйте с нами</DialogTitle>
+        <DialogTitle>Танцуйте с нами! Sway and sway!</DialogTitle>
         <DialogContent>
           <DialogContentText>
             Оставьте Ваш номер телефона и мы обязательно свяжемся с вами! 
@@ -42,8 +42,17 @@ export default function ModalDialog() {
             autoFocus
             margin="dense"
             id="name"
-            label="Как к Вам обращаться?"
+            label="Как к Вам обращаться? ФИО"
             type="full_name"
+            fullWidth
+            variant="standard"
+          />
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            label="Когда мы можем вам позвонить?"
+            type="time_call"
             fullWidth
             variant="standard"
           />
