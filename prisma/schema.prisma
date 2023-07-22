@@ -7,15 +7,13 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url = env("POSTGRES_PRISMA_URL") // uses connection pooling
-  directUrl = env("POSTGRES_URL_NON_POOLING") // uses a direct connection
-  shadowDatabaseUrl = env("POSTGRES_URL_NON_POOLING") // used for migrations
+  url      = env("DATABASE_URL")
 }
 model Account {
   id    Int     @id @default(autoincrement())
 }
 model Private {
-  id        String    @id @unique
+  id        Int       @id @unique
   phone     String?
   full_name String?
   time_call DateTime?
