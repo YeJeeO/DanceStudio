@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@emotion/react':
     specifier: ^11.11.1
@@ -38,9 +34,6 @@ dependencies:
   next:
     specifier: ^13.4.9
     version: 13.4.9(@babel/core@7.22.9)(react-dom@18.2.0)(react@18.2.0)
-  pnpm:
-    specifier: ^8.6.7
-    version: 8.6.7
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -3414,12 +3407,6 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
-  /pnpm@8.6.7:
-    resolution: {integrity: sha512-vRIWpD/L4phf9Bk2o/O2TDR8fFoJnpYrp2TKqTIZF/qZ2/rgL3qKXzHofHgbXsinwMoSEigz28sqk3pQ+yMEQQ==}
-    engines: {node: '>=16.14'}
-    hasBin: true
-    dev: false
-
   /postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
     dev: false
@@ -3978,3 +3965,7 @@ packages:
   /zod@3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
