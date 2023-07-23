@@ -26,7 +26,7 @@ export default function Nav() {
           bordered
           squared
         /></Navbar.Brand>
-        <Navbar.Content >
+        <Navbar.Content>
         <Link as={NextLink} href='/' >О нас</Link>
         <Link as={NextLink}  href='/second'>Преподаватели</Link>
         <Link as={NextLink}  href='/third'>Мероприятия</Link>
