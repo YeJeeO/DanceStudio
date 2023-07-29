@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
+import { Container, Card, Row, Text } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import NextLink from "next/link";
 import { Navbar, Avatar } from "@nextui-org/react";
 
@@ -10,7 +10,7 @@ const preventDefault = (event) => event.preventDefault();
 
 export default function Nav() {
   return (
-    <Box
+    <Container
     css={{
       maxW: "100%",
       boxSizing: "border-box",
@@ -34,6 +34,6 @@ export default function Nav() {
         <Link as={NextLink}  href='/fifth'>Расписание</Link>
         </Navbar.Content>
         </Navbar>
-       </Box>
+       </Container>
   );
 }

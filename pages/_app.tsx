@@ -1,9 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
+
 import type { AppProps } from 'next/app';
 import Nav from '../components/Nav';
-import { NextUIProvider } from '@nextui-org/react';
-import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
-import { Container } from '@mui/system';
+import * as React from 'react';
+import { NextUIProvider, Container} from '@nextui-org/react';
 import Footer from '../components/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -11,14 +11,12 @@ export default function App({ Component, pageProps }: AppProps) {
   <Nav />
   <Container  sx={{ display: 'flex'}}>
     <NextUIProvider>
-    <Box>
-       <CssBaseline />
-      <Box>
+    <Container>
+          <Container>
               <Component {...pageProps} />
-      </Box>
-    </Box>
+      </Container>
+    </Container>
       </NextUIProvider>
-
     </Container>
     <Footer/>
   </>;
