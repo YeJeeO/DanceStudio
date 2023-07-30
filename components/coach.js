@@ -1,9 +1,9 @@
-import { Image, Grid} from "@nextui-org/react";
+import { Image, Grid, Text} from "@nextui-org/react";
 
 const Coach = () => {
     return (
       <div>
-        <h1>Наши педагоги</h1>
+        <Text h1  size={60} css={{textGradient: "45deg, $blue600 -20%, $pink600 50%", mt: "5%"}} weight="bold">Наши педагоги </Text>
         <Grid.Container gap={2}>
        <Grid>
         <Image

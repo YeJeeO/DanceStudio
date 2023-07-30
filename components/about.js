@@ -1,11 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import { Text, Spacer, Container } from "@nextui-org/react"
  
 const About = () => {
-  return (
-    <div>
-     
-      <h1>Наша студия</h1> 
+  return (<>
+    <Container >
+   
+          <Text h1  size={60} css={{textGradient: "45deg, $blue600 -20%, $pink600 50%", mt: "5%"}} weight="bold">
+            Наша студия
+            </Text> 
+            <div>
        Танцевальная студия г. Новосибирск
 Обладатель Гран-при всероссийских и международных фестивалей и конкурсов.
 Хореография в Новосибирске
@@ -30,7 +34,7 @@ const About = () => {
 
 Детская хореографическая студия в Новосибирске
 
-<h1>Детская хореографическая студия</h1>
+<Text h5  size={40} css={{textGradient: "45deg, $blue600 -20%, $pink600 50%", mt: "5%"}} weight="bold">Детская хореографическая студия</Text>
 
   Заниматься хореографией можно с 3 лет. Наши преподаватели могут многому научить. 
   Они и сами продолжают развитие и проходят стажировки у иностранных хореографов. 
@@ -48,6 +52,8 @@ const About = () => {
 
     
     </div>
+    </Container>
+    </>
   );
 };
  

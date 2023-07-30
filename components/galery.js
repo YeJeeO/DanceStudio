@@ -1,15 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 
-import { Image, Grid, Spacer } from "@nextui-org/react";
+import { Image, Grid, Spacer, Text} from "@nextui-org/react";
 
 
 const Galery = () => {
     return (
         <div>
-          <h1>
+<Text h1  size={60} css={{textGradient: "45deg, $blue600 -20%, $pink600 50%", mt: "5%"}} weight="bold">
            Our photograthy and video
-          </h1>
+          </Text>
           В альбоме собраны некоторые видео записи танцев наших учеников. На уроках мы работаем над разитием физических данны, изычаем базовые движения и танцевальные связки, занимаемся постановкой шоу для выступлений. Мы призеры более 50 чемпионатов и конкурсов Новосибирска и других городов.
 
 ГРУППЫ ДЛЯ ДЕТЕЙ И ВЗРОСЛЫХ

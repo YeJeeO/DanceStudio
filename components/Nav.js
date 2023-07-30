@@ -9,24 +9,31 @@ import { Navbar, Avatar } from "@nextui-org/react";
 const preventDefault = (event) => event.preventDefault();
 
 export default function Nav() {
+const [variant, setVariant] = React.useState("static");
+const variants = ["floating"];
   return (
+    
     <Container
-    css={{
+          onClick={preventDefault}
+    >
+ 
+ <Navbar isBordered variant={variant} >
+ 
+        <Navbar.Content css={{
       maxW: "100%",
       boxSizing: "border-box",
-      
-    }}
-      onClick={preventDefault}
-    >
-        <Navbar isBordered variant="floating">
-        <Navbar.Brand> <Avatar
+      dflex: "center",
+      position: "fixed",
+      width: "100%",}}>
+        <Navbar.Brand> 
+        <Avatar
           size="xl"
           src="./logo_mini.jpg"
           color="gradient"
           bordered
           squared
-        /></Navbar.Brand>
-        <Navbar.Content>
+        />
+        </Navbar.Brand>
         <Link as={NextLink} href='/' >О нас</Link>
         <Link as={NextLink}  href='/second'>Преподаватели</Link>
         <Link as={NextLink}  href='/third'>Мероприятия</Link>

@@ -1,13 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import { Image, Grid} from "@nextui-org/react";
+
  
 const Event = () => {
-  return (
-    <div>
-      <h1>Афиша</h1>
-       <span><img src="IMG-20230223-WA0020.jpg" alt="Фотография 1" width="auto" height="400"></img></span>
-      <span><img src="IMG-20230519-WA0028.jpg" alt="Фотография 1" width="auto" height="400"></img></span>
-    </div>
+  return ( <div>   
+<Grid.Container gap={5}>
+      <Grid>
+        <Image
+          src="1.jpg"
+          objectFit="fill"
+          alt="1"
+          width={450}
+          height={300}
+        />
+      </Grid>
+      <Grid>
+        <Image
+          src="2.jpg"
+          objectFit="fill"
+          alt="1"
+          width={450}
+          height={300}
+        />
+      </Grid>
+   </Grid.Container>
+   </div>
   );
 };
  

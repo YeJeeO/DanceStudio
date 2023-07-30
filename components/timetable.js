@@ -1,4 +1,5 @@
 import { Table } from '@nextui-org/react';
+import { Text } from "@nextui-org/react"
 
 const Schedule= () => {
   const columns = [
@@ -47,8 +48,9 @@ const Schedule= () => {
       time: "19:00 ВТ  ЧТ",
     },
   ];
-  return (
-    <Table
+  return (<>
+  <Text h1  size={60} css={{textGradient: "45deg, $blue600 -20%, $pink600 50%", mt: "5%"}} weight="bold">Расписание</Text>
+      <Table
       aria-label="Time table"
       css={{
         height: "100%",
@@ -68,6 +70,7 @@ const Schedule= () => {
         )}
       </Table.Body>
     </Table>
+    </>
   );
 }
   export default Schedule;

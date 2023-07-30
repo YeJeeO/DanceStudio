@@ -41,5 +41,8 @@
     "eslint": "^8.45.0",
     "prisma": "^5.0.0",
     "typescript": "^5.1.6"
+  },
+  "directories": {
+    "lib": "lib"
   }
 }
